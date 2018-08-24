@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bootstrap Resume - Alex Jenkins</title>
+    <title>Alex Jenkins</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Clarence Taylor</span>
+        <span class="d-block d-lg-none">Alex Jenkins</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -171,28 +171,25 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
+              <i class="fab fa-html5" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-css3-alt" data-toggle="tooltip" data-placement="top" title="CSS3"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-java"></i>
+              <i class="fab fa-java" data-toggle="tooltip" data-placement="top" title="Java"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js"></i>
+              <i class="fab fa-js-square" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fas fa-gem"></i>
+              <i class="fas fa-gem" data-toggle="tooltip" data-placement="top" title="Ruby"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-windows"></i>
+              <i class="fab fa-windows" data-toggle="tooltip" data-placement="top" title="Microsoft, Office, Powershell"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-microsoft"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
             </li>
             </ul>
 
@@ -271,6 +268,13 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <!-- Tooltip initialisation -->
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
 
   </body>
 
